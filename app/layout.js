@@ -2,9 +2,9 @@ import StyledComponentsRegistry from './lib/registry'
 
 
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { inter } from '@/utils/fonts'
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export const metadata = {
   title: 'My Component Library',

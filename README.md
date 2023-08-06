@@ -1,3 +1,29 @@
+# My Component Library
+
+This is my component library which started when I took Josh Comeau's 'CSS for JS developers' course. This project is an ongoing one with continuous update as I progress. The goal is to build my own component library that can be applied to my projects.
+
+## Reflections
+
+### Breadcrumb
+
+- Accessibility attributes e.g. 'aria-label'
+- The slash '/' separating Crumbs are not actually semantic, and instead of using slashes, a better way it using a border and transforms its angle to sparing screen readers to read out the word 'slash'
+
+### Button
+
+- A good approach: build one baseline version, e.g. filled large button to have something to start from -> Add size variations -> Add variant and state options
+- 2 ways to allow variations:
+  - a. use the style attribute to make styles accessible to the component that styled-component creates, and create a variable storing different sizes' styles, with naming matching to CSS variables, thus can be set through 'var()' when passed a particular size
+  - b. use conditional rendering in pair with styled-components' composition, i.e. fill/outline/ghost button variations are rendered and unique styles are applied on top of the ButtonBase style.
+- Some great little learnings
+  - 'currentcolor' is often a better choice for things like border-color than literal values - flexible when color is changed in the future
+  - If more than 1 font family is used, can create a utils/fonts.js to import all and export individually when needed. And use variable fonts when possible - smaller package size
+  - Having a constants.js file to store things like primary and secondary color values - saves copying pasting (and switching formats) from Figma.
+
+---
+
+Unprocessed Next.js intro
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
