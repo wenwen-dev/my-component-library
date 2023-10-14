@@ -17,9 +17,8 @@ export default function HomePage() {
           Sectionals
         </Crumb>
       </Breadcrumbs> */}
-      <ButtonTable />
-      {/* <p>A para</p> */}
-      {/* <Button size={40}>Button</Button> */}
+      {/* <ButtonTable /> */}
+
     </>
   )
 }
